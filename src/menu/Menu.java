@@ -1,0 +1,55 @@
+package menu;
+	
+import java.util.Scanner;
+	
+public class Menu{
+	public static void show(){
+	Scanner scanner = new Scanner(System.in);
+	
+	
+	int option;
+		
+	do {
+		displayMenu();
+		
+	
+		option = scanner.nextInt();
+		
+		processOption(option);
+		
+	
+	} while (option != 0);
+
+	}
+
+		private static void displayMenu(){
+		
+		System.out.println();
+        System.out.println("=================================");
+        System.out.println("     JAVA FUNCTIONAL ECOMMERCE");
+        System.out.println("=================================");
+        System.out.println("1 - Product Management");
+        System.out.println("2 - Cart");
+        System.out.println("3 - Checkout");
+        System.out.println("4 - Reports");
+        System.out.println("0 - Exit");
+        System.out.print("Choose an option: ");
+	
+	}
+
+	private static void processOption(int option){
+		
+		switch (option) {
+
+			case 1:
+				System.out.println("Product management selected");
+				break;
+			case 2:
+				System.out.println("Cart Selected");
+				break;
+			case 3: 	
+	
+	}
+		
+	}
+	}
