@@ -48,7 +48,16 @@ public class Menu{
 				System.out.println("Cart Selected");
 				break;
 			case 3: 	
-	
+				System.out.println("Checkout Selected");
+				break;
+			case 4: 
+				System.out.println("Reports Selected");
+				break;
+			case 0: 
+				System.out.println("Application Finished");
+				break;
+		
+		 	
 	}
 		
 	}
