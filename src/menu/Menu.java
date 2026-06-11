@@ -1,5 +1,6 @@
 package menu;
-	
+
+import service.ProductService;
 import java.util.Scanner;
 	
 public class Menu{
@@ -43,6 +44,7 @@ public class Menu{
 
 			case 1:
 				System.out.println("Product management selected");
+				ProductService.createProduct();
 				break;
 			case 2:
 				System.out.println("Cart Selected");
