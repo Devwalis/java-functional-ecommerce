@@ -2,15 +2,49 @@ package service;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
+
 
 import model.Product;
 
 	public class ProductService{
+
+		
 		private static List<Product> product = new ArrayList<>();
 	
 
 
 		public static void createProduct(){
+			Scanner scanner = new Scanner(System.in);
+			
+
+		System.out.println("Enter product name: ");
+		String name = scanner.nextLine();
+		
+		System.out.println("Enter product price: ");
+		Double price = scanner.nextDouble();
+		
+		System.out.println("Enter stock quantity: ");
+		Integer stock = scanner.nextInt();
+		
+
+		Long id = (long) products.size() + 1;
+
+		Product product = new Product(
+			id,
+			name,
+			price,
+			stock
+		);
+	products.add(product);
+		
+		System.out.print();
+		System.out.println("Product crated successufully!");
+		System.out.println("ID " + id);
+		System.out.println("Name: " + name);
+		System.out.println("Price: " + price);
+		System.out.print()
+
 		
 		}
 
