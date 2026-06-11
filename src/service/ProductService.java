@@ -33,7 +33,14 @@ import model.Product;
 		}
 		
 		public static void deleteProduct(Long id){
+			Product product = findProductById(id);
 			
+		if(product == null){
+			System.out.println("Product not found");
+			return;
+			}
+	products.remove(product);
+	System.out.println("Product removed successfully. ");	
 		}
 		
 
