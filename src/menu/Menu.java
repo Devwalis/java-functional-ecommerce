@@ -29,10 +29,10 @@ public class Menu{
         System.out.println("=================================");
         System.out.println("     JAVA FUNCTIONAL ECOMMERCE");
         System.out.println("=================================");
-        System.out.println("1 - Product Management");
-        System.out.println("2 - Cart");
-        System.out.println("3 - Checkout");
-        System.out.println("4 - Reports");
+        System.out.println("1 - Create Product");
+        System.out.println("2 - List Product");
+        System.out.println("3 - Update Product");
+        System.out.println("4 - Delete Product");
         System.out.println("0 - Exit");
         System.out.print("Choose an option: ");
 	
@@ -51,10 +51,10 @@ public class Menu{
 				ProductService.listProducts();
 				break;
 			case 3: 	
-				System.out.println("Checkout Selected");
+				System.out.println("Update Product");
 				break;
 			case 4: 
-				System.out.println("Reports Selected");
+				System.out.println("Delete Product");
 				break;
 			case 0: 
 				System.out.println("Application Finished");
