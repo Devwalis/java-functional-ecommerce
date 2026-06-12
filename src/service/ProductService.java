@@ -59,6 +59,13 @@ import model.Product;
 		}
 
 		public static Product findProductById(Long id){
+
+		for(Product product : products){
+			if(product.getId().equals(id)){
+				return product;
+				
+			}	
+		}
 			return null;
 		
 		}

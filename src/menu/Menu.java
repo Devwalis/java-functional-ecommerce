@@ -52,6 +52,8 @@ public class Menu{
 				break;
 			case 3: 	
 				System.out.println("Update Product");
+				ProductService.findProductById(1L);
+				
 				break;
 			case 4: 
 				System.out.println("Delete Product");
