@@ -69,7 +69,40 @@ import model.Product;
 			return null;
 		
 		}
-		public static void updateProduct(Long id){
+		public static void updateProduct(){
+		Scanner scanner = new Scanner(System.in);
+
+		System.out.print("Enter product ID: ");
+		Long id = scanner.nextLong();
+		
+		scanner.nextLine();
+		
+		Product product = findProductById(id);
+		
+		if(product == null){
+			System.out.prinln("Product not found");
+			return;
+		}
+
+	System.out.println("\nCurrent Product: ");
+	
+	System.out.println(product);
+	
+	System.out.print("\nEnter new product name: ");
+	String name = scanner.nextLine();
+	
+	System.out.printl("Enter new product price: ");
+	Double price = scanner.nextDouble();
+	
+	System.out.print("Enter new stock quantity: ");
+	Integer stock = scanner.nextInt();
+
+	product.setName(name);
+	product.setPrice(price);
+	product.setStock(stock);
+	
+	System.out.println("\nProduct update sucessfully!");
+
 		
 		}
 		
