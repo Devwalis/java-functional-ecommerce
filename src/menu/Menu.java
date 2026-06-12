@@ -47,7 +47,8 @@ public class Menu{
 				ProductService.createProduct();
 				break;
 			case 2:
-				System.out.println("Cart Selected");
+				System.out.println("List Product");
+				ProductService.listProducts();
 				break;
 			case 3: 	
 				System.out.println("Checkout Selected");
