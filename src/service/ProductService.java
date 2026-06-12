@@ -10,7 +10,7 @@ import model.Product;
 	public class ProductService{
 
 		
-		private static List<Product> product = new ArrayList<>();
+		private static List<Product> products = new ArrayList<>();
 	
 
 
@@ -38,12 +38,12 @@ import model.Product;
 		);
 	products.add(product);
 		
-		System.out.print();
+		
 		System.out.println("Product crated successufully!");
 		System.out.println("ID " + id);
 		System.out.println("Name: " + name);
 		System.out.println("Price: " + price);
-		System.out.print()
+		
 
 		
 		}
@@ -54,7 +54,7 @@ import model.Product;
 				return;	
 		}
 		for(Product product : products){
-			System.out.println(product)	
+			System.out.println(product);	
 	}
 		}
 
@@ -81,3 +81,6 @@ import model.Product;
 
 			
 	}
+
+
+				

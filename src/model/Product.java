@@ -55,8 +55,23 @@ package model;
 
 		}
 
+	@Override
+	public String toString(){
+		
+		return "\nID: " + id +
+			"\nName: " + name +
+			"\nPrice: " + price +
+			"\nStock: " + stock +
+			"\n";
 
-	}
+}
+		
+		
+		}
+
+
+
+	
 
 
 	
