@@ -80,7 +80,7 @@ import model.Product;
 		Product product = findProductById(id);
 		
 		if(product == null){
-			System.out.prinln("Product not found");
+			System.out.println("Product not found");
 			return;
 		}
 
@@ -91,7 +91,7 @@ import model.Product;
 	System.out.print("\nEnter new product name: ");
 	String name = scanner.nextLine();
 	
-	System.out.printl("Enter new product price: ");
+	System.out.println("Enter new product price: ");
 	Double price = scanner.nextDouble();
 	
 	System.out.print("Enter new stock quantity: ");
