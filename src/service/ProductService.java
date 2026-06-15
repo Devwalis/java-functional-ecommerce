@@ -40,6 +40,10 @@ import model.Product;
 			stock
 		);
 	products.add(product);
+
+		if(findProductById(id) != null){
+			System.out.println("ID already exists");	
+	}
 		
 		
 		System.out.println("Product crated successufully!");
