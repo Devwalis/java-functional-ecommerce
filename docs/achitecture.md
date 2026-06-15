@@ -291,3 +291,245 @@ Planned improvements:
 9. Monitoring and Logging
 
 These improvements will be implemented gradually as the project evolves.
+# Shopping Cart Architecture
+
+## Overview
+
+The Shopping Cart module is responsible for managing products selected by the customer before checkout.
+
+The cart acts as an intermediary between Product Management and Checkout.
+
+---
+
+## Current Architecture
+
+```text
+Main Menu
+    │
+    ▼
+Product Service
+    │
+    ▼
+Product List
+```
+
+---
+
+## Next Architecture
+
+```text
+Main Menu
+    │
+    ├── Product Management
+    │
+    ├── Shopping Cart
+    │
+    ├── Checkout
+    │
+    └── Reports
+```
+
+---
+
+## Shopping Flow
+
+```text
+Product
+    │
+    ▼
+Cart
+    │
+    ▼
+Checkout
+    │
+    ▼
+Reports
+```
+
+---
+
+## Product Entity
+
+```text
+Product
+│
+├── id
+├── name
+├── price
+└── stock
+```
+
+Represents a product available for sale.
+
+---
+
+## Cart Entity
+
+```text
+Cart
+│
+└── List<Product>
+```
+
+Stores products selected by the customer.
+
+Initially, the project will use a simple implementation where products are directly added to the cart.
+
+---
+
+## Future Cart Structure
+
+```text
+Cart
+│
+└── List<CartItem>
+```
+
+```text
+CartItem
+│
+├── Product
+└── Quantity
+```
+
+This structure is more realistic and allows multiple units of the same product.
+
+---
+
+## Cart Operations
+
+### Add Product
+
+```text
+User selects product ID
+
+        │
+
+        ▼
+
+Find Product
+
+        │
+
+        ▼
+
+Add Product To Cart
+```
+
+---
+
+### List Cart
+
+```text
+Cart
+
+    │
+
+    ▼
+
+Display Products
+
+    │
+
+    ▼
+
+Display Total Value
+```
+
+---
+
+### Remove Product
+
+```text
+User informs product ID
+
+        │
+
+        ▼
+
+Find Product In Cart
+
+        │
+
+        ▼
+
+Remove Product
+```
+
+---
+
+## Checkout Flow
+
+```text
+Cart
+
+    │
+
+    ▼
+
+Validate Stock
+
+    │
+
+    ▼
+
+Update Inventory
+
+    │
+
+    ▼
+
+Generate Order
+
+    │
+
+    ▼
+
+Clear Cart
+```
+
+---
+
+## Service Layer
+
+```text
+ProductService
+
+    ├── createProduct()
+    ├── listProducts()
+    ├── findProductById()
+    ├── updateProduct()
+    └── deleteProduct()
+```
+
+```text
+CartService
+
+    ├── addProductToCart()
+    ├── listCart()
+    └── removeProductFromCart()
+```
+
+```text
+CheckoutService
+
+    └── checkout()
+```
+
+---
+
+## Learning Goals
+
+This module was designed to practice:
+
+* Lists and Collections
+* Object References
+* Service Layer Design
+* Separation of Responsibilities
+* Java Methods
+* CRUD Reuse
+* Console-Based User Interaction
+* Software Architecture Fundamentals
+
+```
+```
