@@ -11,10 +11,13 @@ import model.Product;
 
 		
 		private static List<Product> products = new ArrayList<>();
-	
+		private static Long nextId = 1L;
+		
 
 
 		public static void createProduct(){
+
+			
 			Scanner scanner = new Scanner(System.in);
 			
 
@@ -27,8 +30,8 @@ import model.Product;
 		System.out.println("Enter stock quantity: ");
 		Integer stock = scanner.nextInt();
 		
-
-		Long id = (long) products.size() + 1;
+		Long id = nextId++;
+		
 
 		Product product = new Product(
 			id,
