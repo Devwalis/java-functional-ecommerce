@@ -33,6 +33,7 @@ public class Menu{
         System.out.println("2 - List Product");
         System.out.println("3 - Update Product");
         System.out.println("4 - Delete Product");
+	System.out.println("Add Product to Cart");
         System.out.println("0 - Exit");
         System.out.print("Choose an option: ");
 	
@@ -58,6 +59,11 @@ public class Menu{
 			case 4: 
 				System.out.println("Delete Product");
 				break;
+
+			case 5:
+				System.out.println("ADD Product to Cart");
+				break;
+				
 			case 0: 
 				System.out.println("Application Finished");
 				break;

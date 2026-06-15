@@ -10,7 +10,7 @@ public class Cart{
 
 		public Cart(){
 		
-		this.products = ArrayList<>();
+		this.products = new ArrayList<>();
 	
 	}
 		public List<Product> getProduct(){
