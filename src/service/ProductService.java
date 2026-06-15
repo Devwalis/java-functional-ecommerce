@@ -106,15 +106,25 @@ import model.Product;
 		
 		}
 		
-		public static void deleteProduct(Long id){
-			Product product = findProductById(id);
+		public static void deleteProduct(){
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.println("Enter product id: ");
+		Long id = scanner.nextLong();
+		
+		Product product = findProductById(id);
+	
 			
 		if(product == null){
 			System.out.println("Product not found");
 			return;
 			}
+	System.out.println("\Product found: ");
+	System.out.println(product);
+	
 	products.remove(product);
-	System.out.println("Product removed successfully. ");	
+	System.out.println("\nProduct removed sucessfully!");
+	
 		}
 		
 
@@ -123,4 +133,4 @@ import model.Product;
 	}
 
 
-				
+			
