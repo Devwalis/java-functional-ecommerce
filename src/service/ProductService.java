@@ -119,7 +119,7 @@ import model.Product;
 			System.out.println("Product not found");
 			return;
 			}
-	System.out.println("\Product found: ");
+	System.out.println("\nProduct found: ");
 	System.out.println(product);
 	
 	products.remove(product);
