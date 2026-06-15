@@ -366,15 +366,16 @@ git push
 ---
 
 ## Current Development Stage
+- [x] Project Structure
+- [x] Documentation
+- [x] Main Menu
+- [x] Product Model
+- [x] Product Creation
+- [x] Product Listing
+- [x] Product Search By Id
+- [x] Product Update
+- [x] Product Deletion
 
-* [x] Project Structure
-* [x] Documentation
-* [x] Main Menu
-* [x] Product Model
-* [x] Product Creation
-* [ ] Product Listing
-* [ ] Product Update
-* [ ] Product Deletion
 * [ ] Shopping Cart
 * [ ] Checkout
 * [ ] Reports
