@@ -40,6 +40,25 @@ public class  CartService{
 		
 	
 	public static void listCart(){
+	
+	if(cart.getProduct().isEmpty()){
+		System.out.println("Cart is empty.");
+
+		return;
+	}
+		
+	System.out.println();
+	System.out.println("=====SHOPPING CART =======");
+	
+
+	for(Product product : cart.getProduct()){
+	System.out.println(product);
+	
+	}
+
+	System.out.println("------------------------");
+	System.out.println("Total Items: " + cart.getProduct().size());
+	
 
 	
 	}
